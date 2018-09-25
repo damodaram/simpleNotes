@@ -1,0 +1,75 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: white;
+
+}
+
+/* Full-width input fields */
+input[type=text],textarea, input[type=email], input[type=password] {
+   width: 25%;
+   padding: 15px;
+   display: inline-block;
+   border: 5px;
+   background: #f1f1f1;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+input[type=text]:focus, textarea, input[type=email]:focus input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+   background-color: #C553BC;
+   color: white;
+   border: none;
+   cursor: pointer;
+   opacity: 0.9;
+   width: 120px;
+   padding: 10px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.button-inline {
+   background-color: #C553BC;
+   color: white;
+   border: none;
+   cursor: pointer;
+   opacity: 0.9;
+   width: 80px;
+   padding: 8px;
+   float: right;
+   margin: 5px;
+}
+.container{
+   margin-top: auto;
+   margin-bottom: auto;
+   padding-top: 40px;
+}
+
+.errorMsg{
+    color: red;
+    margin-left: 486px;
+}
+
+.successMsg{
+    color: green;
+    margin-left: 486px;
+}
+
+.form{
+    margin-top: 30px;
+}
+
+.notesTable{
+    background-color: #f1f1f1;
+    width: 100%;
+}
+.notesTableTH{
+    background-color: #f1f1;
+}

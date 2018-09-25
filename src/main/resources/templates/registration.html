@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<centre><title>Registration Form</title></centre>
+<script src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="common.css?a=1"/>
+</head>
+<body>
+<a href="./login" class="button-inline"><b>Login</b></a>
+<a href="./registration" class="button-inline"><b>Register</b></a><br/>
+<div class="container">
+  <div th:if="${errorMessage != null}"
+       th:utext="${errorMessage}" class="errorMsg">...</div>
+<form class="form" th:action="@{/registration}" th:object="${user}" method="post" name="registaration_form" onsubmit="return validateForm()">
+  <span th:if="${#fields.hasErrors('emailId')}" th:errors="*{emailId}">..</span>
+  <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">..</span>
+  <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">..</span>
+  <span th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}">..</span>
+  <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}">..</span>
+  <h2><center>Register here</center></h2>
+  <input pattern="(.){5,50}"  title="Please provide valid Email Id, lenght must be in between 5 to 50" type="email" placeholder="Email Id" th:field="*{emailId}" required><br />
+  <input pattern="(.){1,20}"  title="Please provide valid First Name, lenght must be in between 1 to 50" type="text" placeholder="First Name" th:field="*{firstName}" required><br />
+  <input pattern="(.){5,20}"  title="Please provide valid Last Name, lenght must be in between 5 to 50" type="text" placeholder="Last Name" th:field="*{lastName}" required><br />
+  <input pattern="(.){10,20}"  title="Please provide valid Phone Number, lenght must be in between 10 to 50" type="text" placeholder="Phone Number" th:field="*{phone}" required><br />
+  <input pattern="(.){4,20}"  title="Please provide valid Password, lenght must be in between 4 to 50" type="password" placeholder="Enter Password" id="password" th:field="*{password}" required><br />
+  <input pattern="(.){4,20}"  title="Please provide valid Confirm Password, lenght must be in between 4 to 50" type="password" placeholder="Confirm Password" id="confirm_password" name="confirm_password" required><br />
+   <button type="submit" class="registerbtn"><b>Register</b></button>
+</form>
+</div>
+
+</body>
+</html>

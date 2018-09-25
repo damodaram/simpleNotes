@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="common.css?a=1"/>
+</head>
+<body>
+<a href="./invalidate" class="button-inline"><b>Logout</b></a>
+<div class="container">
+    <a href="./addNote"><b>Add New Note</b></a>
+    <div th:if="${notes != null}">
+    <table th:object="${notes}" class="notesTable">
+        <tr class="notesTableTH">
+            <th>Title</th>
+            <th>Description</th>
+            <th>Created On</th>
+            <th>Last Modified On</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="note :${notes}">
+            <td  th:text="${note.title}"></td>
+            <td  th:text="${note.description}"></td>
+            <td  th:text="${note.createdOn}"></td>
+            <td  th:text="${note.lastModifiedOn}"></td>
+            <td><a th:href="@{/getNote?id=__${note.id}__}"><b>Edit</b></a>  <a th:href="@{/deleteNote?id=__${note.id}__}"><b>Delete</b></a></td>
+        </tr>
+    </table>
+    </div>
+    <div th:if="${notes == null}">
+        There are no notes, please create notes
+    </div>
+</div>
+</body>
+</html>
