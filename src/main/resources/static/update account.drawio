@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-04T10:01:01.263Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="RIy1PT_SyM8r9GFWAzDP" version="14.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-04T10:40:30.659Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="GJYWFQ1qrF1xoeb6_nN8" version="14.2.4" type="github">
   <diagram id="h0_INfSGV6C2thQQo2W5" name="Page-1">
     <mxGraphModel dx="868" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -93,6 +93,15 @@
         </mxCell>
         <mxCell id="Q6B9SEIAQACwiSJehnKT-23" value="Respond to SFM" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="Q6B9SEIAQACwiSJehnKT-22">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6B9SEIAQACwiSJehnKT-26" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;top=0;left=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="530" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6B9SEIAQACwiSJehnKT-27" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="530" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Q6B9SEIAQACwiSJehnKT-28" value="Mobiquity Pay platform" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="471" y="30" width="149" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
